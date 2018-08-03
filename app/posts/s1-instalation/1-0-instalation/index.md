@@ -1,11 +1,13 @@
 ---
 title: Instalation
-date: 2012-08-20
+date: 2018-08-03
 layout: post.html
-permalink: /
 ---
 
-# How to install step by step
 
+```
+git clone git@github.com:Rub21/geokit.git
+cd geokit/
+npm link
 
-# Docker container
+```
