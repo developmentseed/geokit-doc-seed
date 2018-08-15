@@ -5,4 +5,12 @@ layout: post.html
 permalink: /
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a tellus finibus ex maximus ultrices at vel nunc. Aenean in leo et diam viverra faucibus pharetra in tortor. Integer rhoncus non libero eu varius. Praesent sagittis lacus vel volutpat tincidunt. Fusce rhoncus blandit libero, nec molestie velit tempus ut.
+### Overview
+
+The mapping work in different projects involves the analysis and processing of data before, during and at the end of each project. For this, scripts are written in Javascript which process mostly geojson files. All these script are hosted in the Geokit tool, one of the main tools for data team.
+
+This CLI tool contains all the basic functionalities which data team uses for an efficient mapping process.
+
+### What does this do?
+
+Command line tool for basic operations through geojson files.
