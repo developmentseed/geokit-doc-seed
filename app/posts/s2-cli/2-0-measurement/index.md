@@ -1,7 +1,7 @@
 ---
-title: Measurement
+title: Measurements
 date: 2012-09-28
 layout: post.html
 ---
 
-A slightly late, less interesting piece of prose.
+Measure the features in a geojson file.

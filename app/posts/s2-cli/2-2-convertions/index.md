@@ -4,4 +4,4 @@ date: 2012-09-28
 layout: post.html
 ---
 
-A slightly late, less interesting piece of prose.
+Conversion of geojson files to other formats.
