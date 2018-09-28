@@ -4,12 +4,11 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Applicable for *Polygon* and *Multipolygon* geometry type.
-- Get total area in square kilometers of a polygon or polygons into a geojson file.
+- Gets the total area in km² of Polygon and MultiPolygon features that there are in a geojson file.
 
 #### Return:
 
-**Number** - area in square kilometers.
+**Number** - total area in km².
 
 ### Command line:
 
@@ -17,6 +16,6 @@ layout: post.html
 
 ### Use Case:
 
-- Get area in **km²** of any polygon.
+- Get the total area in km² of the all polygons.
 
-![image](https://user-images.githubusercontent.com/19536044/44175196-11021100-a0ab-11e8-9a34-ac65350de54b.png)
+![image](https://user-images.githubusercontent.com/19536044/46107317-a57a8b80-c1a0-11e8-8e5a-0509ec7ad8ed.png)
