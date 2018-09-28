@@ -1,15 +1,14 @@
 ---
-title: Bbox to feature collection
+title: Bbox to FeatureCollection
 date: 2012-09-28
 layout: post.html
 ---
 
-- Applicable for *bbox extent in minX, minY, maxX, maxY order*
-- Convert the bounding box to an geojson file, the geojson file contains the area delimited by the bounding box
+- Converts a bounding box to FeatureCollection.
 
-#### Return:
+##### Return:
 
-**Geojson file** - it contains the area delimited by the bounding box.
+**Geojson file** - it contains the given bounding box as polygon.
 
 ### Command line:
 
@@ -17,6 +16,6 @@ layout: post.html
 
 ### Use Case:
 
-- Get area delimited (boundary) from the bounding box.
+- Get bounding box as polygon in a geojson file.
 
-![image](https://user-images.githubusercontent.com/19536044/44231235-0acf6b80-a163-11e8-8172-b6d83eb08938.png)
+![1](https://user-images.githubusercontent.com/11504548/46216041-5fd6d380-c304-11e8-949e-2ac49bcbd28a.png)
