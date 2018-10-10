@@ -4,12 +4,11 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Applicable only for LineString, and MultiLineString types.
-- Get the total length in kilometers of all feature LineString and MultiLineString types in a geojson file.
+- Gets the total distance in km of LineString and MultiLineString features that there are in a geojson file.
 
 #### Return:
 
-**Number** - Total length in kilometers.
+**Number** - total length in kilometers.
 
 #### Command line:
 
@@ -19,4 +18,4 @@ layout: post.html
 
 - Get total highways length in kilometers.
 
-![5](https://user-images.githubusercontent.com/11504548/44225899-47479b00-a154-11e8-84b6-f18d78155090.png)
+![image](https://user-images.githubusercontent.com/19536044/46213773-146df680-c2ff-11e8-87e6-548cd9c55842.png)

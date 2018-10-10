@@ -4,8 +4,7 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Applicable for *Polygon* geometry type.
-- Get the area of each polygon inside a geojson file.
+- Gets the area in ha of each feature (polygon) into a geojson file and it will generate a new geojson file with all features plus an area property.
 
 #### Return:
 
@@ -16,6 +15,6 @@ layout: post.html
 ```geokit featurearea input.geojson > output.geojson```
 
 #### Use case:
-- Get area per each polygon.  
+- Get the area in ha of each polygon.  
 
-![image](https://user-images.githubusercontent.com/19536044/44175281-59213380-a0ab-11e8-9c9a-a6a6dd145d30.png)
+![image](https://user-images.githubusercontent.com/19536044/46110505-71f02f00-c1a9-11e8-9dcc-96ac9c52b94d.png)

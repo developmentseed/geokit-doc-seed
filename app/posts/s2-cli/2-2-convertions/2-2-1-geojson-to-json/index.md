@@ -4,7 +4,7 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Set each feature into a row from the Feature collection. 
+- Sets each feature into a row from FeatureCollection.
   
 #### Return:
 
