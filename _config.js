@@ -1,5 +1,5 @@
 module.exports = {
-  baseurl: 'http://devseed.com/doc-seed',
+  baseurl: 'http://devseed.com/geokit-doc-seed',
   title: 'Geokit Tool',
   description: 'Tool for basic operations through geojson files',
 
