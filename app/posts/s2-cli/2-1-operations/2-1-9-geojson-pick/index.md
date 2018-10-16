@@ -18,6 +18,4 @@ layout: post.html
 
 - Remove all the attributes except `tileid`.
 
-![screenshot from 2018-10-12 13-46-08](https://user-images.githubusercontent.com/11504548/46888169-55006080-ce25-11e8-944b-f817814d30e7.png)
-
-
+![image](https://user-images.githubusercontent.com/19536044/47043335-00c1ed00-d153-11e8-9e38-20c8b4830184.png)
