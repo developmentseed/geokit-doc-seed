@@ -7,8 +7,9 @@ permalink: /
 
 ### Overview
 
-The mapping work in different projects involves the analysis and processing of data before, during and at the end of each project. For this, scripts are written in Javascript which process mostly geojson files. All these script are hosted in the Geokit tool, one of the main tools for data team to do an efficient mapping process.
+The DevSeed Data Team is constantly handling any geospatial data through different projects of mapping that involves the analysis and processing of data before, during and at the end of each project. For this the Data Team created some scripts that it does their work easier, the scripts are written in Javascript which process mostly geojson files, all these scripts are hosted in the Geokit tool. Using Geokit they can do different operations in few minutes, for this reason the Geokit is one of the main tools for Data Team to do an efficient mapping process, improve the efficiency of workflows and obtain some statistics more easily.
 
 ### What does Geokit do?
 
-This CLI tool contains all the basic functionalities for measurements, conversions and operations through geojson files.
+Geokit is a command-line interface (CLI) tool written in javascript, that contains all the basic functionalities for measurements, conversions and operations of geojson files.
+
