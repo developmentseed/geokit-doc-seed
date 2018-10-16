@@ -8,7 +8,7 @@ Converts geojson polygons to OpenStreetMap (OSM) poly format file.
 
 #### Return
 
-**poly file** - contains the polygon in poly format file
+**poly file** - it contains the polygon in poly format file.
 
 #### Command line:
 
