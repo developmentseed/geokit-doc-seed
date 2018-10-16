@@ -18,3 +18,5 @@ layout: post.html
 
 - Merge two or more geojson files.
 
+![image](https://user-images.githubusercontent.com/19536044/47046277-61085d00-d15a-11e8-965f-872632bffa8b.png)
+
