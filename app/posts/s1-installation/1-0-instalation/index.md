@@ -17,6 +17,11 @@ git clone git@github.com:developmentseed/geokit.git
 cd geokit/
 ```
 ```
-docker build -t geokit-container .
-alias geokit='docker run --rm -v ${PWD}:/app geokit-container:latest geokit'
+docker-compose build
+alias geokit='docker run --rm -v ${PWD}:/app geokit:latest geokit'
+```
+or
+
+```
+docker-compose run geokit
 ```
