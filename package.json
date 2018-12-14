@@ -21,7 +21,7 @@
     "build": "DS_ENV=production NODE_ENV=production gulp",
     "lint": "eslint app/assets/scripts/ --ext .js",
     "test": "echo \"No tests\" && exit 0",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "yarn run build && gh-pages -d build"
   },
   "engines": {
     "node": "8.x"
@@ -60,7 +60,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
-    "gh-pages": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-cache": "^1.0.1",
     "gulp-csso": "^3.0.0",
