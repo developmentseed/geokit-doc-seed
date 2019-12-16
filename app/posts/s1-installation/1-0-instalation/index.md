@@ -25,3 +25,9 @@ or
 ```
 docker-compose run geokit
 ```
+
+#### Install Geokit from [Docker hub](https://hub.docker.com/r/developmentseed/geokit)
+
+```
+docker pull developmentseed/geokit
+```
