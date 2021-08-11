@@ -4,18 +4,35 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Adds an osm_download_link column per each feature and each link downloads the feature in JOSM.
+- Script to separate features tagged as `yes` and `no` in polygons(tiles) and points.
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--geojson_file</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to geojson file</td>
+	</tr>
+    <tr>
+		<td style="text-align: center; vertical-align: middle;">--geojson_output</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: center; vertical-align: middle;">Geojson separated in no, yes (tile - point)</td>
+	</tr>
+</table>
 
 #### Return
 
-**CSV file** - with osm_download_link column in the file.
+**Geojson files** - One file of the tiles (polygons) tagged as `yes`, one file of the tiles (polygons) tagged as `no` and one file of the schools (points).
 
 #### Command line:
 
-```geokit fc2csv input.geojson  > output.csv```
-
-#### Use case:
-
-- Add an osm_download_link column to download data in JOSM.
-
-![image](https://user-images.githubusercontent.com/19536044/46218645-c6f78680-c30a-11e8-940e-b9bf3a2c8a70.png)
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python chips_ahoy \
+    filter_chips \
+    --geojson_file=<INPUT_GEOJSON> \
+    --geojson_output=<OUTPUT_GEOJSON>
+```
