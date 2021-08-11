@@ -4,18 +4,35 @@ date: 2012-09-28
 layout: post.html
 ---
 
-Converts geojson file to osm format.
+- Find the boxes that intersect and are greater than the tolerance, for default tolerance is 70 (70% of the area of the small intersection box).
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--in_file</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to cvat xml file</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--tolerance</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: center; vertical-align: middle;">tolerance to filter</td>
+	</tr>       
+</table>
 
 #### Return
 
-**osm file** - it contains the FeatureCollection in osm format file.
+**csv file** - it contains the image id (as an attribute) for validating if exist duplicate boxes for the same object or feature.
 
 #### Command line:
 
-```geojsontoosm input.geojson > output.osm```
-
-#### Use case:
-
-- Convert from geojson to osm format file.
-
-![image](https://user-images.githubusercontent.com/19536044/47044616-4fbd5180-d156-11e8-8a2d-beaba2ed325e.png)
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python cvat \ 
+    intersectionbox \
+    --in_file=<CVAT_XML> \
+    --tolerance=<TOLERANCE> > output.csv
+```

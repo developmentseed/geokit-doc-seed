@@ -4,17 +4,45 @@ date: 2012-09-28
 layout: post.html
 ---
 
-Converts geojson polygons to OpenStreetMap (OSM) poly format file.
+- Convert npz to xml format.
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--npz_file</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to labelMaker npz file</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--img_path</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path of the images in CVAT</td>
+	</tr>       
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--img_label</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">label image eg: tower</td>
+	</tr>     
+</table>
+
 
 #### Return
 
-**poly file** - it contains the polygon in poly format file.
+**xml file** 
 
 #### Command line:
 
-```geojson2poly input.geojson output.poly```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python cvat \    
+    npz2xml \
+    --npz_file=<NPZ> \
+    --img_path=<IMG_PATH> \
+    --img_label=<IMG_LABEL>  
+```
 
-#### Use case:
-- Convert a polygon from geojson to poly format file.
 
-![image](https://user-images.githubusercontent.com/19536044/47043059-4a5e0800-d152-11e8-9cc7-bc17ea7db362.png)
+

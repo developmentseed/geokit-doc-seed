@@ -4,18 +4,45 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Adds an osm_download_link column per each feature and each link downloads the feature in JOSM.
+- Downsize the images from big size to 512x512. Supports only jpg files.
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--img_path</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to images folder</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--output_path</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to the output images folder</td>
+	</tr>    
+</table>
 
 #### Return
 
-**CSV file** - with osm_download_link column in the file.
+**images** - downsized images, it works for many images inside a folder.
 
 #### Command line:
 
-```geokit fc2csv input.geojson  > output.csv```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python cvat \
+    downsized_imgs \ 
+    --img_path=<IMG_FOLDER> \
+    --output_path=<OUTPUT_FOLDER>
+```
 
 #### Use case:
 
-- Add an osm_download_link column to download data in JOSM.
+- Downsize the image from 1280x853 to 512x512 size. 
 
-![image](https://user-images.githubusercontent.com/19536044/46218645-c6f78680-c30a-11e8-940e-b9bf3a2c8a70.png)
+![image](https://user-images.githubusercontent.com/19536044/129049472-b8d56e9f-d75d-43ed-a17e-478bf04b417b.png)
+
+
+
+

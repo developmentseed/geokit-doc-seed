@@ -4,4 +4,4 @@ date: 2012-09-28
 layout: post.html
 ---
 
-Conversion of geojson files to other formats.
+Useful scripts when you work with [CVAT](https://github.com/openvinotoolkit/cvat) tool.

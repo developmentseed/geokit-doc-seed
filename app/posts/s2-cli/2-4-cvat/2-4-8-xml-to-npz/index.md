@@ -4,17 +4,35 @@ date: 2012-09-28
 layout: post.html
 ---
 
-Converts geojson polygons to OpenStreetMap (OSM) poly format file.
+- Convert xml to npz format.
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--xml_file</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to cvat xml file</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--npz_file</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to npz file</td>
+	</tr>         
+</table>
 
 #### Return
 
-**poly file** - it contains the polygon in poly format file.
+**npz file** 
 
 #### Command line:
 
-```geojson2poly input.geojson output.poly```
-
-#### Use case:
-- Convert a polygon from geojson to poly format file.
-
-![image](https://user-images.githubusercontent.com/19536044/47043059-4a5e0800-d152-11e8-9cc7-bc17ea7db362.png)
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python cvat \
+    xml2npz \
+    --xml_file=<CVAT_XML> \
+    --npz_file=<NPZ>
+```
