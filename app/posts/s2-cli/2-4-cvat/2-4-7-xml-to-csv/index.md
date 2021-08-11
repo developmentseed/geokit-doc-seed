@@ -4,17 +4,46 @@ date: 2012-09-28
 layout: post.html
 ---
 
-Converts geojson polygons to OpenStreetMap (OSM) poly format file.
+- Convert xml to csv format.
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--xml_file</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to cvat xml file</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--csv_file</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to csv file</td>
+	</tr>       
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--full</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: center; vertical-align: middle;">use True for obtaining all the attributes of the xml</td>
+	</tr>     
+</table>
 
 #### Return
 
-**poly file** - it contains the polygon in poly format file.
+**csv file** 
 
 #### Command line:
 
-```geojson2poly input.geojson output.poly```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python cvat \
+    xml2csv \
+    --xml_file=<CVAT_XML> \
+    --csv_file=<CSV> \
+    --full=<FULL>
+```
 
 #### Use case:
-- Convert a polygon from geojson to poly format file.
+- Convert xml to csv format.
 
-![image](https://user-images.githubusercontent.com/19536044/47043059-4a5e0800-d152-11e8-9cc7-bc17ea7db362.png)
+![image](https://user-images.githubusercontent.com/19536044/129051925-3a97a787-8a06-4356-83d0-fa63635f78e9.png)

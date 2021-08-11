@@ -4,18 +4,35 @@ date: 2012-09-28
 layout: post.html
 ---
 
-Converts osm file to geojson format.
+- Fix ordinal suffixes of xml file.
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--xml_input</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to xml file</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--xml_output</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">path to the output xml file</td>
+	</tr>    
+</table>
 
 #### Return
 
-**Geojson file** - it contains the FeatureCollection in geojson format file.
+**xml file** - it contains the fixed of the ordinal suffixes.
 
 #### Command line:
 
-```osmtogeojson input.osm > output.geojson```
-
-#### Use case:
-
-- Convert from osm to geojson format file.
-
-![image](https://user-images.githubusercontent.com/19536044/47044659-64014e80-d156-11e8-9e7e-6e2d592b8354.png)
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python cvat \
+    fix_ordinal_suffixes \
+    --xml_input=<INPUT_XML> \
+    --xml_output=<OUTPUT_XML>
+```
