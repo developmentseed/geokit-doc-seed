@@ -1,0 +1,50 @@
+---
+title: Geojson to csv
+date: 2012-09-28
+layout: post.html
+---
+
+- Convert geojson to csv, and also add an osm_download_link column that contains the download link for each feature in JOSM. It works also with aws uri.
+
+<table border>
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--geojson_input</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">Path to geojson polygons</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--osm_download_link</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: center; vertical-align: middle;">add osm_download_link</td>
+	</tr>       
+	<tr>
+		<td style="text-align: center; vertical-align: middle;">--csv_out</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">Path to csv output</td>
+	</tr>     
+</table>
+
+#### Return
+
+**CSV file** - with osm_download_link column in the file.
+
+#### Command line:
+
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python geo \
+    fc2csv \
+    --geojson_input=<INPUT_GEOJSON>  \
+    --osm_download_link \
+    --csv_out=<OUTPUT_CSV>
+```
+
+#### Use case:
+
+- Convert geojson to csv, and add an osm_download_link column to download data in JOSM.
+
+![image](https://user-images.githubusercontent.com/19536044/46218645-c6f78680-c30a-11e8-940e-b9bf3a2c8a70.png)
