@@ -31,7 +31,7 @@ layout: post.html
 
 #### Return:
 
-**Geojson file** - Features with the keys that were keep.
+**Geojson file** - it contains features with the keys that were keep.
 
 #### Command line:
 
