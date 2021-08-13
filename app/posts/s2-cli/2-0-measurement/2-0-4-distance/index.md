@@ -4,7 +4,7 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Gets the total distance in km of LineString and MultiLineString features that there are in a geojson file.
+- It gets the total distance in km of LineString and MultiLineString features that there are in a geojson file.
 
 #### Return:
 
@@ -12,7 +12,10 @@ layout: post.html
 
 #### Command line:
 
-```geokit distance input.geojson```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
+    distance input.geojson
+```
 
 #### Use case:
 

@@ -4,7 +4,7 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Gets the total area in km² of Polygon and MultiPolygon features that there are in a geojson file.
+- It gets the total area in km² of Polygon and MultiPolygon features that there are in a geojson file.
 
 #### Return:
 
@@ -12,7 +12,10 @@ layout: post.html
 
 ### Command line:
 
-```geokit area input.geojson```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
+    area input.geojson
+```
 
 ### Use Case:
 

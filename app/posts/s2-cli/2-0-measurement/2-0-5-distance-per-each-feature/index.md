@@ -4,18 +4,17 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Add distance as an attribute; it contains the length in kilometers that has each feature in a geojson file.
+- It adds the distance as an attribute; it contains the length in kilometers that has each feature in a geojson file.
 
 #### Return:
 
-**Geojson file** - with distance attribute
+**Geojson file** - with distance attribute per each feature
 
 #### Command line:
 
 ```
 docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node geokit \
-    featuredistance \
-    input.geojson > output.geojson
+    featuredistance input.geojson > output.geojson
 ```
 
 #### Use case:

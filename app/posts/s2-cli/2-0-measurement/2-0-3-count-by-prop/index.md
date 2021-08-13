@@ -4,14 +4,17 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Gets the total number of features that exist inside the a geojson file (according to a chosen property).
+- It gets the total number of features that exist inside the a geojson file (according to a chosen property).
 
 #### Return: 
 **Number** - total number of features.
 
 ### Command line:
 
-```geokit countfeature input.geojson --prop property=*```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
+    countfeature input.geojson --prop property=*
+```
 
 **Note:** The property can be building, highway, landuse, etc.
 
