@@ -6,26 +6,26 @@ layout: post.html
 
 - It converts GeoJSON to CSV, and also add an osm_download_link column that contains the download link for each feature in JOSM. It works also with aws uri.
 
-<table border>
+<table border cellpadding="5">
 	<tr>
 		<th style="width: 30%;">COMMAND</th> 
         <th style="width: 30%;">REQUIRED</th> 
         <th style="width: 30%;">DESCRIPTION</th>
 	</tr>
 	<tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--geojson_input</td> 
+		<td style="text-align: justify; vertical-align: middle;">--geojson_input</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Path to GeoJSON polygons</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON polygons</td>
 	</tr>
 	<tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--osm_download_link</td> 
+		<td style="text-align: justify; vertical-align: middle;">--osm_download_link</td> 
         <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Add osm_download_link</td>
+        <td style="text-align: justify; vertical-align: middle;">Add osm_download_link</td>
 	</tr>       
 	<tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--csv_out</td> 
+		<td style="text-align: justify; vertical-align: middle;">--csv_out</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Path to CSV output</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to CSV output</td>
 	</tr>     
 </table>
 

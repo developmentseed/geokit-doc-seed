@@ -6,21 +6,21 @@ layout: post.html
 
 - It separates the features tagged as `yes` and `no` in polygons(tiles) and points.
 
-<table border>
+<table border cellpadding="5">
 	<tr>
 		<th style="width: 20%;">COMMAND</th> 
         <th style="width: 20%;">REQUIRED</th> 
         <th style="width: 50%;">DESCRIPTION</th>
 	</tr>
 	<tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--geojson_file</td> 
+		<td style="text-align: justify; vertical-align: middle;">--geojson_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Path to GeoJSON file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON file</td>
 	</tr>
     <tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--geojson_output</td> 
+		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
         <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;GeoJSON separated in no, yes (tile - point)</td>
+        <td style="text-align: justify; vertical-align: middle;">GeoJSON separated in no, yes (tile - point)</td>
 	</tr>
 </table>
 

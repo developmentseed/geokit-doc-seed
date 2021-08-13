@@ -22,4 +22,3 @@ docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
 - Get the length in kilometers by each feature.
 
 ![image](https://user-images.githubusercontent.com/19536044/129275038-9e282133-e992-4e26-bc87-f09ce3b3092f.png)
-

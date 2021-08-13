@@ -6,36 +6,36 @@ layout: post.html
 
 - It adds the tiles and url-tiles to each features in a GeoJSON file.
 
-<table border>
+<table border cellpadding="5">
 	<tr>
 		<th style="width: 20%;">COMMAND</th> 
         <th style="width: 20%;">REQUIRED</th> 
         <th style="width: 50%;">DESCRIPTION</th>
 	</tr>
 	<tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--geojson_file</td> 
+		<td style="text-align: justify; vertical-align: middle;">--geojson_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Path to GeoJSON file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON file</td>
 	</tr>
     <tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--zoom</td> 
+		<td style="text-align: justify; vertical-align: middle;">--zoom</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Zoom to get the tile</td>
+        <td style="text-align: justify; vertical-align: middle;">Zoom to get the tile</td>
 	</tr>
     <tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--url_map_service</td> 
+		<td style="text-align: justify; vertical-align: middle;">--url_map_service</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Tile map service url</td>
+        <td style="text-align: justify; vertical-align: middle;">Tile map service url</td>
 	</tr>
     <tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--geojson_output</td> 
+		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
         <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Original GeoJSON with the attributes: tile, url</td>
+        <td style="text-align: justify; vertical-align: middle;">Original GeoJSON with the attributes: tile, url</td>
 	</tr>
     <tr>
-		<td style="text-align: left; vertical-align: middle;">&nbsp;--chuck</td> 
+		<td style="text-align: justify; vertical-align: middle;">--chuck</td> 
         <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: left; vertical-align: middle;">&nbsp;Chuck size</td>
+        <td style="text-align: justify; vertical-align: middle;">Chuck size</td>
 	</tr>
 </table>
   
