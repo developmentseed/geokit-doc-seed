@@ -1,18 +1,21 @@
 ---
-title: Geojson pick
+title: GeoJSON pick
 date: 2012-09-28
 layout: post.html
 ---
 
-- Removes all but specified properties from features in a FeatureCollection.
+- It removes all but specified properties from features in a FeatureCollection.
 
 #### Return:
 
-**Geojson file** - it contains all features only with the specified properties.
+**GeoJSON file** - It contains all features only with the specified properties.
 
 #### Command line:
 
-```geojson-pick PROPERTYNAME1 < input.geojson > output.geojson```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest \
+    geojson-pick PROPERTYNAME1 PROPERTYNAME1 < input.geojson > output.geojson
+```
 
 #### Use case:
 

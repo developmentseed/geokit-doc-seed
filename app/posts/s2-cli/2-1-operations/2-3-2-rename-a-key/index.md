@@ -4,21 +4,21 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Changes a key name in each features in the geojson file.
+- It changes a key name in each features in the GeoJSON file.
 
 #### Return:
 
-**Geojson file** - it contains features with the new name of the key.
+**GeoJSON file** - It contains features with the new name of the key.
 
 #### Command line:
 
 ```
-docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node geokit \
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
     renamekey input.geojson --key="old_key_name>new_key_name" > output.geojson
 ```
 
 #### Use case:
 
-- Rename a key in each feature in the file
+- Rename the key `dc_has_pattern_school` to `pattern_school` in each feature in the input file.
 
-![Screenshot from 2021-08-11 16-44-49](https://user-images.githubusercontent.com/11504548/129107532-4ed95566-d646-4299-bb0d-6d2845a6f773.png)
+![image](https://user-images.githubusercontent.com/11504548/129107532-4ed95566-d646-4299-bb0d-6d2845a6f773.png)
