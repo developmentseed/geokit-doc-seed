@@ -4,18 +4,18 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Get the total of images tagged and boxes tagged according to their classification.
+- It gets the total of images tagged and boxes tagged according to their classification.
 
-<table border>
+<table border cellpadding="5">
 	<tr>
 		<th style="width: 30%;">COMMAND</th> 
         <th style="width: 30%;">REQUIRED</th> 
         <th style="width: 30%;">DESCRIPTION</th>
 	</tr>
 	<tr>
-		<td style="text-align: center; vertical-align: middle;">--xml_file</td> 
+		<td style="text-align: justify; vertical-align: middle;">--xml_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: center; vertical-align: middle;">path to cvat xml file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to CVAT-XML file</td>
 	</tr>
 </table>
 
@@ -26,7 +26,7 @@ layout: post.html
 ### Command line:
 
 ```
-docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python cvat \
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest cvat \
     count_tag \
     --xml_file=<CVAT_XML>
 ```
