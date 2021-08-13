@@ -13,6 +13,6 @@ layout: post.html
 ### Command line:
 
 ```
-docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node geokit \
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
     jsonlines2geojson input.json > output.geojson 
 ```

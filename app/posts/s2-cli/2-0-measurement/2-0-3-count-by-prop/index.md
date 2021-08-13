@@ -4,9 +4,10 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- It gets the total number of features that exist inside the a geojson file (according to a chosen property).
+- It gets the total number of features that exist inside the GeoJSON file (according to a chosen property).
 
 #### Return: 
+
 **Number** - total number of features.
 
 ### Command line:

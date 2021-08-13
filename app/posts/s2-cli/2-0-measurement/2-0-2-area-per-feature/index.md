@@ -4,11 +4,11 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- It gets the area in ha of each feature (polygon) into a geojson file and it will generate a new geojson file with all features plus an area property.
+- It gets the area in ha of each feature (polygon) into a GeoJSON file and it will generate a new GeoJSON file with all features plus an area property.
 
 #### Return:
 
-**Geojson file** - in each polygon (inside a geojson file) was add area property - the area is in hectares.
+**GeoJSON file** - in each polygon (inside a GeoJSON file) was add area property - the area is in hectares.
 
 ### Command line:
 

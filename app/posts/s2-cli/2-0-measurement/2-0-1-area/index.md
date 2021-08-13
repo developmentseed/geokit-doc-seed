@@ -4,7 +4,7 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- It gets the total area in km² of Polygon and MultiPolygon features that there are in a geojson file.
+- It gets the total area in km² of Polygon and MultiPolygon features that there are in a GeoJSON file.
 
 #### Return:
 

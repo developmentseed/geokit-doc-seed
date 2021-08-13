@@ -36,7 +36,7 @@ layout: post.html
 #### Command line:
 
 ```
-docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python geo \
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest geo \
     fc2csv \
     --geojson_input=<INPUT_GEOJSON>  \
     --osm_download_link \
