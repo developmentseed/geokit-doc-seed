@@ -15,12 +15,12 @@ layout: post.html
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--geojson_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON file.</td>
 	</tr>
     <tr>
 		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
-        <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: justify; vertical-align: middle;">GeoJSON separated in no, yes (tile - point)</td>
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">GeoJSON separated in no, yes (tile - point).</td>
 	</tr>
 </table>
 

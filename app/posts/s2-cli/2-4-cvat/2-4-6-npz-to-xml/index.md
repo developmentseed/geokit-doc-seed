@@ -10,22 +10,22 @@ layout: post.html
 	<tr>
 		<th style="width: 30%;">COMMAND</th> 
         <th style="width: 30%;">REQUIRED</th> 
-        <th style="width: 30%;">DESCRIPTION</th>
+        <th style="width: 40%;">DESCRIPTION</th>
 	</tr>
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--npz_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to labelMaker NPZ file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to labelMaker NPZ file.</td>
 	</tr>
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--img_path</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path of the images in CVAT</td>
+        <td style="text-align: justify; vertical-align: middle;">Path of the images in CVAT.</td>
 	</tr>       
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--img_label</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Label image e.g., tower</td>
+        <td style="text-align: justify; vertical-align: middle;">Label image e.g., tower.</td>
 	</tr>     
 </table>
 

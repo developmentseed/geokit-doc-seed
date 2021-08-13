@@ -4,23 +4,23 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- It finds the boxes that intersect and are greater than the tolerance, for default tolerance is 70 (70% of the area of the small intersection box).
+- It finds the boxes that intersect and are greater than the tolerance.
 
 <table border cellpadding="5">
 	<tr>
-		<th style="width: 30%;">COMMAND</th> 
-        <th style="width: 30%;">REQUIRED</th> 
-        <th style="width: 30%;">DESCRIPTION</th>
+		<th style="width: 20%;">COMMAND</th> 
+        <th style="width: 20%;">REQUIRED</th> 
+        <th style="width: 50%;">DESCRIPTION</th>
 	</tr>
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--in_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to CVAT-XML file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to CVAT-XML file.</td>
 	</tr>
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--tolerance</td> 
         <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: justify; vertical-align: middle;">Tolerance to filter</td>
+        <td style="text-align: justify; vertical-align: middle;">Tolerance to filter. Default value: 70.0 (70% of intersection between 2 boxes).</td>
 	</tr>       
 </table>
 

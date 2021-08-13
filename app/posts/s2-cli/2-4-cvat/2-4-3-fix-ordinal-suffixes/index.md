@@ -15,12 +15,12 @@ layout: post.html
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--xml_input</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to XML file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to XML file.</td>
 	</tr>
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--xml_output</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to the output XML file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to the output XML file.</td>
 	</tr>    
 </table>
 

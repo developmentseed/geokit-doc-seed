@@ -15,12 +15,12 @@ layout: post.html
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--img_path</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to images folder</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to images folder.</td>
 	</tr>
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--output_path</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to the output images folder</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to the output images folder.</td>
 	</tr>    
 </table>
 

@@ -15,7 +15,7 @@ layout: post.html
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--xml_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to CVAT-XML file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to CVAT-XML file.</td>
 	</tr>
 </table>
 

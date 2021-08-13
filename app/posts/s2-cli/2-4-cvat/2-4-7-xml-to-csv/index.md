@@ -15,17 +15,17 @@ layout: post.html
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--xml_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to CVAT-XML file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to CVAT-XML file.</td>
 	</tr>
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--csv_file</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
-        <td style="text-align: justify; vertical-align: middle;">Path to CSV file</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to CSV file.</td>
 	</tr>       
 	<tr>
 		<td style="text-align: justify; vertical-align: middle;">--full</td> 
         <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: justify; vertical-align: middle;">For default, the full value is False. Use True for obtaining all the attributes of the XML</td>
+        <td style="text-align: justify; vertical-align: middle;">Use True for obtaining all the attributes of the XML. Default value: False.</td>
 	</tr>     
 </table>
 
