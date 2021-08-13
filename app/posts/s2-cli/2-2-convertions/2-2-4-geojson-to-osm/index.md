@@ -1,21 +1,24 @@
 ---
-title: Geojson to OMS
+title: GeoJSON to OSM
 date: 2012-09-28
 layout: post.html
 ---
 
-Converts geojson file to osm format.
+- It converts GeoJSON file to OSM format.
 
 #### Return
 
-**osm file** - it contains the FeatureCollection in osm format file.
+**OSM file** - it contains the FeatureCollection in OSM format file.
 
 #### Command line:
 
-```geojsontoosm input.geojson > output.osm```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
+    geojsontoosm input.geojson > output.osm
+```
 
 #### Use case:
 
-- Convert from geojson to osm format file.
+- Convert from GeoJSON to OSM format file.
 
 ![image](https://user-images.githubusercontent.com/19536044/47044616-4fbd5180-d156-11e8-8a2d-beaba2ed325e.png)
