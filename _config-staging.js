@@ -1,1 +1,3 @@
-module.exports = {};
+module.exports = {
+  baseurl: 'https://geokit.surge.sh',
+};

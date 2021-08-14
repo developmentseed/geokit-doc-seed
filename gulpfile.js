@@ -253,6 +253,10 @@ gulp.task('styles', function () {
 // After being rendered, process the html files. (merge css files, etc)
 gulp.task('html', ['styles'], function () {
   var conf = require('./_config');
+  if (process.env.DS_ENV === 'staging') {
+    conf = require('./_config-staging');
+  }
+  
   return gulp.src('build/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app']}))
     // Do not compress comparisons, to avoid MapboxGLJS minification issue
