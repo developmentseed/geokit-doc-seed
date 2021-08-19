@@ -19,9 +19,11 @@
     "postinstall": "[ -f _config-dev.js ] || echo \"module.exports = {\n  baseurl: 'http://localhost:3000'\n};\" > _config-dev.js",
     "serve": "DS_ENV=development gulp collecticons && DS_ENV=development gulp serve",
     "build": "DS_ENV=production NODE_ENV=production gulp",
+    "build-staging": "DS_ENV=staging NODE_ENV=staging gulp",
     "lint": "eslint app/assets/scripts/ --ext .js",
     "test": "echo \"No tests\" && exit 0",
-    "deploy": "yarn run build && gh-pages -d build"
+    "deploy": "yarn run build && gh-pages -d build",
+    "staging": "yarn run build-staging && surge ./build geokit.surge.sh "
   },
   "engines": {
     "node": "8.x"

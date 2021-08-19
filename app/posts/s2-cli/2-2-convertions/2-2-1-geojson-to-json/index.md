@@ -4,18 +4,21 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- Sets each feature into a row from FeatureCollection.
+- It sets each feature into a row from FeatureCollection.
   
 #### Return:
 
-**Geojson file** - each feature was organized into a row.
+**JSON file** - each feature was organized into a row.
 
 ### Command line:
 
-```geokit fc2frows input.geojson > output.geojson```
+```
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
+    fc2frows input.geojson > output.json
+```
 
 ### Use Case:
 
 - Set each feature into a row.
 
-![image](https://user-images.githubusercontent.com/19536044/44234237-bbda0400-a16b-11e8-9f7e-b97b0bd9488b.png)
+![image](https://user-images.githubusercontent.com/19536044/129390539-09bf41c2-5bda-4eac-98e5-bf0c58db3844.png)

@@ -4,4 +4,4 @@ date: 2012-09-28
 layout: post.html
 ---
 
-Measure the features in a geojson file.
+Measure the features in a GeoJSON file.
