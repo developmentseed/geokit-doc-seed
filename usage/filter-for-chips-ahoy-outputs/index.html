@@ -36,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-1f3aba71c5.css">
+<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-14a92f3438.css">
 
   </head>
   <body>
@@ -696,6 +696,11 @@
         <td style="text-align: center; vertical-align: middle;">yes</td>
         <td style="text-align: justify; vertical-align: middle;">GeoJSON separated in no, yes (tile - point).</td>
 	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--clean_fields</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: justify; vertical-align: middle;">Flag option - for cleaning chips-ahoy fields.</td>
+	</tr>    
 </table>
 <h4>Return</h4>
 <p><strong>GeoJSON files</strong> - One file of the tiles (polygons) tagged as <code>yes</code>, one file of the tiles (polygons) tagged as <code>no</code> and one file of the schools (points).</p>
@@ -703,8 +708,14 @@
 <pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest chips_ahoy \
     filter_chips \
     --geojson_file=&lt;INPUT_GEOJSON&gt; \
-    --geojson_output=&lt;OUTPUT_GEOJSON&gt;
+    --geojson_output=&lt;OUTPUT_GEOJSON&gt; \
+    --clean_fields
 </code></pre>
+<h3>Use Case:</h3>
+<ul>
+<li>Get points of the tiles tagged as <code>yes</code> and clean chips ahoy fields.</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/19536044/134578890-10ac8d32-941f-4e5c-8482-6ce4ef52e374.png" alt="image" /></p>
 
                 </div>
               </div>
