@@ -44,6 +44,6 @@ docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest chips_a
 ```
 ### Use Case:
 
-- Get points of the tiles tagged as `yes` and clean chips-ahoy fields.
+- Get points of the tiles tagged as `yes` and clean chips ahoy fields.
 
-![image](https://user-images.githubusercontent.com/19536044/134573652-c4d96d12-f087-4937-8048-4f4f35186257.png)
+![image](https://user-images.githubusercontent.com/19536044/134578890-10ac8d32-941f-4e5c-8482-6ce4ef52e374.png)
