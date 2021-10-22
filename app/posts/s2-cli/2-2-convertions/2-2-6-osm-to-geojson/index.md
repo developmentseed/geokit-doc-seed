@@ -13,7 +13,7 @@ layout: post.html
 #### Command line:
 
 ```
-docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
+docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest \
     osmtogeojson input.osm > output.geojson
 ```
 
