@@ -33,7 +33,7 @@ layout: post.html
         <td style="text-align: justify; vertical-align: middle;">Output mode: <br/> - merged: all features in one file <br/> - by_props: features in each file according filtered properties. <br/> - by_geometry: features in each file according the filtered geometries.<br>Defaul value: merged.</br></td>
 	</tr>
     <tr>
-		<td style="text-align: justify; vertical-align: middle;">--geojson_out</td> 
+		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
         <td style="text-align: center; vertical-align: middle;">yes</td>
         <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON output.</td>
 	</tr>
