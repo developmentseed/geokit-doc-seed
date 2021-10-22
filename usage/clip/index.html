@@ -36,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-14a92f3438.css">
+<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-d95d6f0ec7.css">
 
   </head>
   <body>
@@ -262,16 +262,6 @@
   <li>
       
       <a href="http://devseed.com/geokit-doc-seed/usage/merge-geojson-files" title="Go to page" class="ppn__menu-item ">Merge GeoJSON files</a>
-      
-
-
-
-
-  </li>
-  
-  <li>
-      
-      <a href="http://devseed.com/geokit-doc-seed/usage/geojson-pick" title="Go to page" class="ppn__menu-item ">GeoJSON pick</a>
       
 
 
@@ -678,13 +668,38 @@
               <div class="inner">
                 <div class="prose prose--responsive">
                   <ul>
-<li>It gets only the features that are inside the given boundary and it deletes all features outside the boundary.</li>
+<li>It gets only the features that are inside the given boundary and it deletes all features outside the boundary. This script can work with aws - s3 uri.</li>
 </ul>
+<table border cellpadding="5">
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 30%;">REQUIRED</th> 
+        <th style="width: 30%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_input</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON to process.</td>
+	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_boundary</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON boundary.</td>
+	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON output.</td>
+	</tr>
+</table>
 <h4>Return:</h4>
 <p><strong>GeoJSON file</strong> - It contains all features inside the given boundary.</p>
 <h3>Command line:</h3>
-<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
-    clip input.geojson boundary.geojson &gt; output.geojson
+<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest geo \
+    clip \
+    --geojson_input=&lt;INPUT_GEOJSON&gt; \
+    --geojson_boundary=&lt;BOUNDARY_GEOJSON&gt; \
+    --geojson_output=&lt;OUTPUT_GEOJSON&gt;
 </code></pre>
 <h4>Use case:</h4>
 <ul>

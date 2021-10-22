@@ -36,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-14a92f3438.css">
+<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-d95d6f0ec7.css">
 
   </head>
   <body>
@@ -262,16 +262,6 @@
   <li>
       
       <a href="http://devseed.com/geokit-doc-seed/usage/merge-geojson-files" title="Go to page" class="ppn__menu-item ppn__menu-item--active">Merge GeoJSON files</a>
-      
-
-
-
-
-  </li>
-  
-  <li>
-      
-      <a href="http://devseed.com/geokit-doc-seed/usage/geojson-pick" title="Go to page" class="ppn__menu-item ">GeoJSON pick</a>
       
 
 
@@ -678,17 +668,54 @@
               <div class="inner">
                 <div class="prose prose--responsive">
                   <ul>
-<li>It merges multiple GeoJSON files into one FeatureCollection.</li>
+<li>It merges multiple GeoJSON files into one FeatureCollection. This script can work with aws - s3 uri.</li>
 </ul>
+<table border cellpadding="5">
+	<tr>
+		<th style="width: 15%;">COMMAND</th> 
+        <th style="width: 15%;">REQUIRED</th> 
+        <th style="width: 15%;">MULTIPLE</th> 
+        <th style="width: 25%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_input</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON to process.</td>
+	</tr>
+	<tr>
+		<td style="text-align: justify; vertical-align: middle;">--folder_path</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to folders with GeoJSON files.</td>
+	</tr>  
+	<tr>
+		<td style="text-align: justify; vertical-align: middle;">--recursive</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: justify; vertical-align: middle;">Flag to search under folder path. Default: False.</td>
+	</tr>        
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON output.</td>
+	</tr>
+</table>
 <h4>Return:</h4>
 <p><strong>GeoJSON file</strong> - It contains all features.</p>
 <h4>Command line:</h4>
-<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest \
-    geojson-merge input1.geojson input2.geojson &gt; output.geojson
+<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest geo \
+    merge_fc \
+    --geojson_inputs=&lt;INPUT_GEOJSON&gt; \
+    --geojson_inputs=&lt;INPUT_GEOJSON&gt; \
+    --folder_path=&lt;FOLDER_PATH&gt; \
+    --recursive \    
+    --geojson_output=&lt;OUTPUT_GEOJSON&gt;
 </code></pre>
 <h4>Use case:</h4>
 <ul>
-<li>Merge two or more GeoJSON files.</li>
+<li>Merge two GeoJSON files.</li>
 </ul>
 <p><img src="https://user-images.githubusercontent.com/19536044/47046277-61085d00-d15a-11e8-965f-872632bffa8b.png" alt="image" /></p>
 
@@ -707,7 +734,7 @@
                     </li>
                     <li>
                       
-                        <a href="http://devseed.com/geokit-doc-seed/usage/geojson-pick" class="pa-next" title="View next post"><span>Next</span></a>
+                        <a href="http://devseed.com/geokit-doc-seed/usage/keep-attributes-in-features" class="pa-next" title="View next post"><span>Next</span></a>
                       
                     </li>
                   </ul>
