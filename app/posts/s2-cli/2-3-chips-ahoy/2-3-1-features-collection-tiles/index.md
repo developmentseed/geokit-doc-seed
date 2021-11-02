@@ -37,6 +37,11 @@ layout: post.html
         <td style="text-align: center; vertical-align: middle;">no</td>
         <td style="text-align: justify; vertical-align: middle;">Chuck size. Default value: 0.</td>
 	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--is_super_tile</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: justify; vertical-align: middle;">Flag for adding neighbors tiles. Default value: False.</td>
+	</tr>    
 </table>
   
 #### Return:
@@ -52,7 +57,8 @@ docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest chips_a
     --zoom=<ZOOM> \
     --url_map_service=<URL_MAP_SERVICE> \
     --geojson_output=<OUTPUT_GEOJSON> \
-    --chuck=<CHUCK_SIZE>
+    --chuck=<CHUCK_SIZE> \
+    --is_super_tile
 ```
 
 ### Use Case:
