@@ -36,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-d95d6f0ec7.css">
+<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-cc767093cc.css">
 
   </head>
   <body>
@@ -701,6 +701,11 @@
         <td style="text-align: center; vertical-align: middle;">no</td>
         <td style="text-align: justify; vertical-align: middle;">Chuck size. Default value: 0.</td>
 	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--is_super_tile</td> 
+        <td style="text-align: center; vertical-align: middle;">no</td>
+        <td style="text-align: justify; vertical-align: middle;">Flag for adding neighbors tiles. Default value: False.</td>
+	</tr>    
 </table>
 <h4>Return:</h4>
 <p><strong>GeoJSON file</strong> - features have the properties of tile, tile's url and the uuid.</p>
@@ -711,7 +716,8 @@
     --zoom=&lt;ZOOM&gt; \
     --url_map_service=&lt;URL_MAP_SERVICE&gt; \
     --geojson_output=&lt;OUTPUT_GEOJSON&gt; \
-    --chuck=&lt;CHUCK_SIZE&gt;
+    --chuck=&lt;CHUCK_SIZE&gt; \
+    --is_super_tile
 </code></pre>
 <h3>Use Case:</h3>
 <ul>
