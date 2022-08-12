@@ -36,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-cc767093cc.css">
+<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-d4518be656.css">
 
   </head>
   <body>
@@ -668,19 +668,45 @@
               <div class="inner">
                 <div class="prose prose--responsive">
                   <ul>
-<li>It changes a key name in each features in the GeoJSON file.</li>
+<li>It renames one or more attributes of the features in the GeoJSON file.</li>
 </ul>
+<table border cellpadding="5px">
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 20%;">REQUIRED</th> 
+        <th style="width: 50%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_input</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON to process.</td>
+	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--props</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Attributes to rename. This can be multiple and in the following format: old_key=new_key</td>
+	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON output.</td>
+	</tr>
+</table>
 <h4>Return:</h4>
-<p><strong>GeoJSON file</strong> - It contains features with the new name of the key.</p>
+<p><strong>GeoJSON file</strong> - It contains features with the new names of the attributes.</p>
 <h4>Command line:</h4>
-<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
-    renamekey input.geojson --key=&quot;old_key_name&gt;new_key_name&quot; &gt; output.geojson
+<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest geo \
+    renamekey \
+    --geojson_input=&lt;INPUT_GEOJSON&gt; \
+    --props=old_key_1=new_key_1 \
+    --props=old_key_2=new_key_2 \
+    --geojson_output=&lt;OUTPUT_GEOJSON&gt;
 </code></pre>
 <h4>Use case:</h4>
 <ul>
-<li>Rename the key <code>dc_has_pattern_school</code> to <code>pattern_school</code> in each feature in the input file.</li>
+<li>Rename the attribute <code>dc_has_pattern_school</code> to <code>pattern_school</code> in each feature in the input file.</li>
 </ul>
-<p><img src="https://user-images.githubusercontent.com/11504548/129107532-4ed95566-d646-4299-bb0d-6d2845a6f773.png" alt="image" /></p>
+<p><img src="https://user-images.githubusercontent.com/11504548/184251665-27df7077-23f9-480d-8faf-9b0de8a60ce1.png" alt="Image" /></p>
 
                 </div>
               </div>
@@ -716,7 +742,7 @@
             <a href="https://developmentseed.org" title="Visit Development Seed website">
               <span><img src="http://devseed.com/geokit-doc-seed/assets/graphics/layout/devseed-logo-symbol.svg" alt="Development Seed logo symbol" width="512" height="152" /></span>
               <strong>Development Seed</strong>
-              <small>2021</small>
+              <small>2022</small>
             </a>
           </p>
         </div>
@@ -727,6 +753,6 @@
 
     <script src="http://devseed.com/geokit-doc-seed/assets/scripts/vendor-8137ba6e79.js"></script>
 
-<script src="http://devseed.com/geokit-doc-seed/assets/scripts/bundle-e1cf2b8092.js"></script>
+<script src="http://devseed.com/geokit-doc-seed/assets/scripts/bundle-90a77b585d.js"></script>
   </body>
 </html>

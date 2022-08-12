@@ -36,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-cc767093cc.css">
+<link rel="stylesheet" href="http://devseed.com/geokit-doc-seed/assets/styles/main-d4518be656.css">
 
   </head>
   <body>
@@ -668,19 +668,44 @@
               <div class="inner">
                 <div class="prose prose--responsive">
                   <ul>
-<li>It gets the area in ha of each feature (polygon) into a GeoJSON file and it will generate a new GeoJSON file with all features plus an area property.</li>
+<li>It gets the area of each feature (Polygon/MultiPolygon) into a GeoJSON file and it will generate a new GeoJSON file with all features with an area attribute.</li>
 </ul>
+<table border cellpadding="5px">
+	<tr>
+		<th style="width: 30%;">COMMAND</th> 
+        <th style="width: 20%;">REQUIRED</th> 
+        <th style="width: 50%;">DESCRIPTION</th>
+	</tr>
+	<tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_input</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON to process.</td>
+	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--unit_measurement</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Unit of area measurement: <br/> - square_meters: area in square meters.<br/> - hectares: area in hectares. <br/> - square_kilometers: area in square kilometers.</td>
+	</tr>
+    <tr>
+		<td style="text-align: justify; vertical-align: middle;">--geojson_output</td> 
+        <td style="text-align: center; vertical-align: middle;">yes</td>
+        <td style="text-align: justify; vertical-align: middle;">Path to GeoJSON output.</td>
+	</tr>
+</table>
 <h4>Return:</h4>
-<p><strong>GeoJSON file</strong> - in each polygon (inside a GeoJSON file) was add area property - the area is in hectares.</p>
+<p><strong>GeoJSON file</strong> - Each polygon/multipolygon feature in the GeoJSON file has an area attribute in the unit measurement selected.</p>
 <h3>Command line:</h3>
-<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:node.latest geokit \
-    featurearea input.geojson &gt; output.geojson
+<pre><code>docker run --rm -v ${PWD}:/mnt/data developmentseed/geokit:python.latest geo \
+    featurearea \
+    --geojson_input=&lt;INPUT_GEOJSON&gt; \
+    --unit_measurement=square_kilometers \
+    --geojson_output=&lt;OUTPUT_GEOJSON&gt;
 </code></pre>
 <h4>Use case:</h4>
 <ul>
-<li>Get the area in hectares (ha) of each polygon.</li>
+<li>Get the area in square kilometers of each polygon/multipolygon.</li>
 </ul>
-<p><img src="https://user-images.githubusercontent.com/19536044/46110505-71f02f00-c1a9-11e8-9dcc-96ac9c52b94d.png" alt="image" /></p>
+<p><img src="https://user-images.githubusercontent.com/11504548/184227033-e013c324-e7fd-47d6-8fb9-aa0b5225b48e.png" alt="images" /></p>
 
                 </div>
               </div>
@@ -716,7 +741,7 @@
             <a href="https://developmentseed.org" title="Visit Development Seed website">
               <span><img src="http://devseed.com/geokit-doc-seed/assets/graphics/layout/devseed-logo-symbol.svg" alt="Development Seed logo symbol" width="512" height="152" /></span>
               <strong>Development Seed</strong>
-              <small>2021</small>
+              <small>2022</small>
             </a>
           </p>
         </div>
@@ -727,6 +752,6 @@
 
     <script src="http://devseed.com/geokit-doc-seed/assets/scripts/vendor-8137ba6e79.js"></script>
 
-<script src="http://devseed.com/geokit-doc-seed/assets/scripts/bundle-e1cf2b8092.js"></script>
+<script src="http://devseed.com/geokit-doc-seed/assets/scripts/bundle-90a77b585d.js"></script>
   </body>
 </html>
