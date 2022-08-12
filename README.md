@@ -24,7 +24,7 @@ nvm install
 Install Node modules:
 
 ```
-yarn install
+npm install
 ```
 
 
