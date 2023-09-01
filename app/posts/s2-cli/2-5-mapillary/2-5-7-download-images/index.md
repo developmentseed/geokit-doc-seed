@@ -32,6 +32,7 @@ layout: post.html
 #### Return:
 
 **GeoJSON file** - output points with the images URL.
+
 **Folder** - it contains the downloaded images from Mapillary.
 
 ### Command line:
