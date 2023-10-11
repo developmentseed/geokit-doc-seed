@@ -41,6 +41,6 @@ layout: post.html
 docker run --rm -v ${PWD}:/mnt/data -e MAPILLARY_ACCESS_TOKEN=$MAPILLARY_ACCESS_TOKEN -it developmentseed/geokit:python.latest mapillary \
     download_mapillary_imgs \
     --input_file_points=<INPUT_GEOJSON> \
-    --output_images_path=<OUTPUT_IMAGES PATH> \
+    --output_images_path=<OUTPUT_IMAGES_PATH> \
     --output_file_points=<OUTPUT_GEOJSON>
 ```
