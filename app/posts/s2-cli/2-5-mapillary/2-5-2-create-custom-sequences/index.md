@@ -6,10 +6,10 @@ layout: post.html
 
 - It adds URLs to review the images of the sequences.
 
-In Mapillary, many sequences have a frontal view (road) of street-view imagery. These sequences are not useful for us when we want to label the facade building or lots, so we can remove them.
+In Mapillary, many sequences have only a frontal view (road). These sequences are not useful when we want to have a view to the facade building or lots, so we can remove them.
 
 In order to delete unnecessary sequences, it is necessary to have the generated custom sequence files and upload them to the tool. We have 2 tools that help us to do it:
-1. A plugin in JOSM to be able to see an image of a sequence and to be able to delete it if necessary (download it from s3://ds-data-projects/JOSM/osm-obj-info.jar). 
+1. A plugin in [JOSM](https://josm.openstreetmap.de/) to be able to see an image of a sequence and to be able to delete it if necessary (download it from s3://ds-data-projects/JOSM/osm-obj-info.jar). 
 
 2. An [app](https://filter_sequences.surge.sh/) that allows us to load GeoJSON files and view random images of a sequence, it allows us to delete sequences by marking with a check.
 

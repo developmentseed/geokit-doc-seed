@@ -4,7 +4,7 @@ date: 2012-09-28
 layout: post.html
 ---
 
-- It gets points and sequence for a bbox or boundaries from mapillary.
+- It gets points and sequences for a bbox or boundaries from mapillary.
 
 ( * ) Convert the human date to timestamp (milliseconds) [here](https://www.epochconverter.com/). 
 
@@ -23,11 +23,6 @@ layout: post.html
         <td style="text-align: justify; vertical-align: middle;">Path to geojson file of boundaries or bbox in the format 'xMin, yMin, xMax, yMax'.</td>
 	</tr>
 	<tr>
-		<td style="text-align: justify; vertical-align: middle;">--field_name</td> 
-        <td style="text-align: center; vertical-align: middle;">no</td>
-        <td style="text-align: justify; vertical-align: middle;">A field name from the GeoJSON boundaries.</td>
-	</tr>
-    <tr>
 		<td style="text-align: justify; vertical-align: middle;">--field_name</td> 
         <td style="text-align: center; vertical-align: middle;">no</td>
         <td style="text-align: justify; vertical-align: middle;">A field name from the GeoJSON boundaries.</td>
